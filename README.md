@@ -35,10 +35,10 @@
 
 ### Ответ 1
 
-![Вывод консоли](https://flic.kr/p/2q4yXFo)
-![Настройки проекта](https://flic.kr/p/2q4DBto)
-![Настройки проекта](https://flic.kr/p/2q4FHz1)
-![Настройки проекта](https://flic.kr/p/2q4FHKS)
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/1-1.png)
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/1-2.png)
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/1-3.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/1-4.png)
 
 ---
 
