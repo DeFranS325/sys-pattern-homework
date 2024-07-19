@@ -73,6 +73,13 @@
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
+### Ответ 3
+
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-4.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-1.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-2.png)
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-3.png)
+
 ---
 
 ### Задание 4*
