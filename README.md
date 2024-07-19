@@ -51,6 +51,15 @@
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
 
+### Ответ 2
+
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-1.png)
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-2.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-3.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-4.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-5.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/2-6png)
+
 ---
 
 ### Задание 3
