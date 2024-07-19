@@ -78,7 +78,7 @@
 ![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-4.png)
 ![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-1.png)
 ![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-2.png)
-![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-3.png)
+![Nexus](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/3-3.png)
 
 ---
 
@@ -89,3 +89,10 @@
 Подсказка: используйте переменную BUILD_NUMBER.
 
 В качестве ответа пришлите скриншоты с настройками проекта и результатами выполнения сборки.
+
+### Ответ 4
+
+![Настройки проекта](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/4-1.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/4-2.png)
+![Вывод консоли](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/4-3.png)
+![Nexus](https://github.com/DeFranS325/sys-pattern-homework/blob/8-02/img/4-4.png)
