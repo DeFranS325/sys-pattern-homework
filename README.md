@@ -92,6 +92,10 @@
 
 #### Требования к результаты 
 1. Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
+
+### Ответ 2
+
+![Free C:](https://github.com/DeFranS325/sys-pattern-homework/blob/9-01/img/3-1.png)  
 --- 
 
 ## Критерии оценки
