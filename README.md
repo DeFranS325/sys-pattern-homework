@@ -78,6 +78,14 @@
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 4. Приложите в файл README.md текст использованных команд в GitHub
 
+
+### Ответ 2
+
+![HOSTS](https://github.com/DeFranS325/sys-pattern-homework/blob/9-01/img/2-1.png)  
+![AGENT LOGS](https://github.com/DeFranS325/sys-pattern-homework/blob/9-01/img/2-2.png)  
+![LATEST DATA](https://github.com/DeFranS325/sys-pattern-homework/blob/9-01/img/2-3.png)  
+4. sudo apt install zabbix-agent
+
 ---
 ## Задание 3 со звёздочкой*
 Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
