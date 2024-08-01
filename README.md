@@ -61,7 +61,7 @@
 
 
 ### Ответ 2
-![Prometheus Status](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/2-1.png)
+![Node Exporter Status](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/2-1.png)
 
 ---
 
@@ -77,6 +77,11 @@
 #### Требования к результату
 - [ ] Прикрепите к файлу README.md скриншот конфигурации из интерфейса Prometheus вкладки Status > Configuration
 - [ ] Прикрепите к файлу README.md скриншот из интерфейса Prometheus вкладки Status > Targets, чтобы было видно минимум два эндпоинта
+
+
+### Ответ 3
+![Status Configuration](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/3-1.png)
+![Status Targets](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/3-2.png)
 
 ---
 ## Дополнительные задания со звёздочкой*
