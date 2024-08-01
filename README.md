@@ -59,6 +59,10 @@
 #### Требования к результату
 - [ ] Прикрепите к файлу README.md скриншот systemctl status node-exporter, где будет написано: node-exporter.service — Node Exporter Netology Lesson 9.4 — [Ваши ФИО]
 
+
+### Ответ 2
+![Prometheus Status](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/2-1.png)
+
 ---
 
 ### Задание 3
