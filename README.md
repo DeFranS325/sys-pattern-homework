@@ -145,6 +145,32 @@ fi
 
 - [ ] Прикрепите в файл README.md код скрипта в Git. Приложите в Git скриншот Latest data с результатом работы скрипта на Python, чтобы были видны результаты работы скрипта при отправке в него 1, 2, -ping, а также -simple_print.*
  
+ 
+ 
+### Ответ 7
+
+```
+import sys
+import os
+import re
+import datetime
+current_date = datetime.datetime.now().strftime('%d.%m.%Y')
+if (sys.argv[1] == '1'): # Если 1
+    print(f"Сергеев А.Н.") # Выводим ФИО
+elif (sys.argv[1] == '2'): # Если 2
+    print(current_date) # Выводим текущую дату
+elif (sys.argv[1] == '-ping'): # Если -ping
+    result=os.popen("ping -c 1 " + sys.argv[2]).read() # Делаем пинг по заданному адресу
+    result=re.findall(r"time=(.*) ms", result) # Выдёргиваем из результата время
+    print(result[0]) # Выводим результат в консоль
+elif (sys.argv[1] == '-simple_print'): # Если simple_print
+    print(sys.argv[2]) # Выводим в консоль содержимое sys.arvg[2]
+else: # Во всех остальных случаях
+    print(f"unknown input: {sys.argv[1]}") # Выводим непонятый запрос в консоль
+```
+
+![Задание 7](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/7-1.png)
+
  ---
 
 ### Задание 8* со звёздочкой
