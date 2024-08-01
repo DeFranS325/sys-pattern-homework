@@ -196,6 +196,12 @@ else: # Во всех остальных случаях
 
 - [ ] Приложите в GitHub файлы Vagrantfile и zabbix-agent.sh.*
 
+
+### Ответ 9
+
+[Vagrantfile](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/ubuntu+zabbix-agent/Vagrantfile)
+[zabbix-agent.sh](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/ubuntu+zabbix-agent/zabbix-agent.sh)
+
 ## Критерии оценки
 
 1. Выполнено минимум 4 обязательных задания
