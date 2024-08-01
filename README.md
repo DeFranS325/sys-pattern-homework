@@ -180,6 +180,14 @@ else: # Во всех остальных случаях
 #### Требования к результату
 - [ ] Прикрепите в файл README.md скриншот правила обнаружения, а также скриншот страницы Discover, где видны оба хоста.*
 
+
+### Ответ 8
+
+![Задание 8](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/8-1.png)
+![Задание 8](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/8-2.png)
+![Задание 8](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/8-3.png)
+![Задание 8](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/8-4.png)
+
  ---
 
 ### Задание 9* со звёздочкой
