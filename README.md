@@ -103,3 +103,7 @@
 
 ### Задание 5*
 Интегрируйте Grafana и Prometheus.
+
+
+### Ответ 5
+![Dashboard](https://github.com/DeFranS325/sys-pattern-homework/blob/9-04/img/5-1.png)
