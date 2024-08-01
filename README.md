@@ -118,7 +118,22 @@
 
 #### Требования к результату
 - [ ] Прикрепите в файл README.md код скрипта, а также скриншот Latest data с результатом работы скрипта на bash, чтобы был виден результат работы скрипта при отправке в него 1 и 2
- 
+
+
+### Ответ 6
+```
+#!/bin/bash
+if [[ $1 -eq 1 ]]
+        then echo 'Сергеев А.Н.'
+elif [[ $1 -eq 2 ]]
+        then echo "$(date '+%d.%m.%Y')"
+fi
+```
+
+![Задание 6](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/6-1.png)
+![Задание 6](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/6-2.png)
+![Задание 6](https://github.com/DeFranS325/sys-pattern-homework/blob/9-02/img/6-3.png)
+
  ---
 
 ### Задание 7* со звёздочкой
