@@ -32,6 +32,8 @@
 ### Требования к результату
 - [ ] Погасите node exporter, стоящий на мониторинге, и прикрепите скриншот раздела оповещений Prometheus, где оповещение будет в статусе Pending
 
+
+### Ответ 1
 ![Alertmanager Pending](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/1-1.png)
 
 ---
@@ -41,6 +43,10 @@
 
 ### Требования к результату
 - [ ] Прикрепите скриншот Alerts из Prometheus, где правило оповещения будет в статусе Fireing, и скриншот из Alertmanager, где будет видно действующее правило оповещения
+
+
+### Ответ 2
+![Alertmanager Fireing](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/2-1.png)
 
 ---
 
