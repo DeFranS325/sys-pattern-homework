@@ -57,6 +57,10 @@
 ### Требования к результату
 - [ ] приложите скриншот браузера с открытым эндпоинтом, а также скриншот списка таргетов из интерфейса Prometheus.*
 
+### Ответ 2
+![Prometheus Targets](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/3-1.png)
+![Docker Exporter](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/3-2.png)
+
 ---
 
 ### Задание 4* (со звездочкой)
