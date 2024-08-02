@@ -32,6 +32,8 @@
 ### Требования к результату
 - [ ] Погасите node exporter, стоящий на мониторинге, и прикрепите скриншот раздела оповещений Prometheus, где оповещение будет в статусе Pending
 
+![Alertmanager Pending](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/1-1.png)
+
 ---
 
 ### Задание 2
