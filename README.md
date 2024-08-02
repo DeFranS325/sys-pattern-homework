@@ -57,7 +57,8 @@
 ### Требования к результату
 - [ ] приложите скриншот браузера с открытым эндпоинтом, а также скриншот списка таргетов из интерфейса Prometheus.*
 
-### Ответ 2
+
+### Ответ 3
 ![Prometheus Targets](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/3-1.png)
 ![Docker Exporter](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/3-2.png)
 
@@ -66,3 +67,7 @@
 ### Задание 4* (со звездочкой)
 
 Создайте свой дашборд Grafana с различными метриками Docker и сервера, на котором он стоит.
+
+
+### Ответ 4
+![My Dashboard](https://github.com/DeFranS325/sys-pattern-homework/blob/9-05/img/4-1.png)
