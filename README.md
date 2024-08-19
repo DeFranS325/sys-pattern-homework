@@ -61,6 +61,12 @@
 - На проверку отправьте получившейся bash-скрипт и конфигурационный файл keepalived, а также скриншот с демонстрацией переезда плавающего ip на другой сервер в случае недоступности порта или файла index.html
 
 
+### Ответ 2
+[keepalived.conf](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/files/keepalived.conf)
+[check_port_script.sh](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/files/check_port_script.sh)
+![После отключения nginx на основном](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/img/2-1.png)
+![После включения nginx на основном](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/img/2-2.png)
+
 ------
 
 ## Дополнительные задания со звёздочкой*
