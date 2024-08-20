@@ -82,6 +82,16 @@
 - На проверку отправьте получившийся bash-скрипт и конфигурационный файл keepalived, а также скриншоты логов keepalived с серверов при разных нагрузках
 
 
+### Ответ 3
+[keepalived_track_file.conf](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/files/keepalived_track_file.conf)  
+[track_loadavg.sh](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/files/track_loadavg.sh)  
+#нормальная работа nginx на основном
+![нормальная работа nginx на основном](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/img/3-1.png)  
+#После отключения nginx на основном
+![После отключения nginx на основном](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/img/3-2.png)  
+#После отключения nginx на втором
+![После отключения nginx на втором](https://github.com/DeFranS325/sys-pattern-homework/blob/10-01/img/3-3.png)  
+
 ------
 
 ### Правила приема работы
