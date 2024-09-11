@@ -43,7 +43,7 @@
 
 
 ### Ответ 1
-![Статистика HAProxy](img/1-1.png)
+![Статистика HAProxy](img/1-1.png)  
 [Настройки HAProxy](files/haproxy.cfg)
 
 
@@ -55,8 +55,8 @@
 
 
 ### Ответ 2
-![Обращение без example.local](img/2-1.png)
-![Обращение с example.local](img/2-2.png)
+![Обращение без example.local](img/2-1.png)  
+![Обращение с example.local](img/2-2.png)  
 [Настройки HAProxy](files/haproxy-with-weight.cfg)
 
 ---
@@ -75,8 +75,8 @@
 ### Ответ 3
 ![Обращение к картинке](img/3-1.png)
 ![Обращение к localhost](img/3-2.png)
-![Обращение к текстовому файлу](img/3-3.png)
-[Настройки HAProxy](files/haproxy-nginx.cfg)
+![Обращение к текстовому файлу](img/3-3.png)  
+[Настройки HAProxy](files/haproxy-nginx.cfg)  
 [Настройки example-http для Nginx](files/example-http.conf)
 
 
@@ -90,6 +90,10 @@
 - Настройте фронтенд HAProxy так, чтобы в зависимости от запрашиваемого сайта example1.local или example2.local запросы перенаправлялись на разные бэкенды HAProxy
 - На проверку направьте конфигурационный файл HAProxy, скриншоты, демонстрирующие запросы к разным фронтендам и ответам от разных бэкендов.
 
+
+### Ответ 4
+![Запросы к разным frontend](img/4-1.png)  
+[Настройки HAProxy](files/haproxy-two-backend.cfg)
 
 ------
 
