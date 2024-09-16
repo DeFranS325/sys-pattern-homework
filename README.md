@@ -54,7 +54,7 @@
 
 
 ### Ответ 2
-[Скрипт для cron](files/crontab.sh)
+[Скрипт для cron](files/crontab.sh)  
 ![Результат выполнения](img/2-1.png)
 
 ---
