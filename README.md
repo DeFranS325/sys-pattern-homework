@@ -42,6 +42,10 @@ SELECT * FROM payment WHERE (payment_date BETWEEN '2005-06-14 23:59:59' AND '200
 Получите последние пять аренд фильмов.
 
 ### Ответ
+```SQL
+(SELECT * from rental ORDER BY rental_id DESC limit 5) ORDER BY rental_id;
+```
+
 
 ### Задание 4
 
@@ -50,6 +54,14 @@ SELECT * FROM payment WHERE (payment_date BETWEEN '2005-06-14 23:59:59' AND '200
 Сформируйте вывод в результат таким образом:
 - все буквы в фамилии и имени из верхнего регистра переведите в нижний регистр,
 - замените буквы 'll' в именах на 'pp'.
+
+### Ответ
+```SQL
+SELECT customer_id, store_id, REPLACE(LOWER(first_name), 'll', 'pp'), LOWER(last_name), email, address_id, active, create_date, last_update
+FROM customer
+WHERE (active = 1) 
+AND (first_name IN ('Kelly', 'Willie'));
+```
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
