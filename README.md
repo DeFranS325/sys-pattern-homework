@@ -25,7 +25,7 @@
 
 ### Ответ
 ```SQL
-SELECT DISTINCT district FROM address WHERE district LIKE 'K%a';
+SELECT DISTINCT district FROM address WHERE (district LIKE 'K%a') AND (district NOT LIKE '% %');
 ```
 
 ### Задание 2
@@ -59,8 +59,7 @@ SELECT * FROM payment WHERE (payment_date BETWEEN '2005-06-14 23:59:59' AND '200
 ```SQL
 SELECT customer_id, store_id, REPLACE(LOWER(first_name), 'll', 'pp'), LOWER(last_name), email, address_id, active, create_date, last_update
 FROM customer
-WHERE (active = 1) 
-AND (first_name IN ('Kelly', 'Willie'));
+WHERE (active = 1) AND (first_name IN ('Kelly', 'Willie'));
 ```
 
 ## Дополнительные задания (со звёздочкой*)
@@ -70,6 +69,19 @@ AND (first_name IN ('Kelly', 'Willie'));
 
 Выведите Email каждого покупателя, разделив значение Email на две отдельных колонки: в первой колонке должно быть значение, указанное до @, во второй — значение, указанное после @.
 
+### Ответ
+```SQL
+SELECT SUBSTRING_INDEX(email, '@', 1) as username, SUBSTRING_INDEX(email, '@', -1) as domain, email FROM customer;
+```
+
 ### Задание 6*
 
 Доработайте запрос из предыдущего задания, скорректируйте значения в новых колонках: первая буква должна быть заглавной, остальные — строчными.
+
+### Ответ
+```SQL
+SELECT CONCAT(UPPER(LEFT(SUBSTRING_INDEX(email, '@', 1), 1)),LOWER(SUBSTRING(SUBSTRING_INDEX(email, '@', 1), 2))) as username,
+       SUBSTRING_INDEX(email, '@', -1) as domain,
+	   email
+FROM customer;
+```
