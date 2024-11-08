@@ -92,3 +92,13 @@ GROUP BY s.staff_id;
 ### Задание 5*
 
 Найдите фильмы, которые ни разу не брали в аренду.
+
+### Ответ
+```SQL
+SELECT f.title AS 'Название фильма', r.rental_date AS 'Дата аренды'
+FROM rental r
+RIGHT JOIN inventory i ON i.inventory_id = r.inventory_id
+RIGHT JOIN film f ON f.film_id = i.film_id 
+WHERE r.rental_id IS NULL;
+```
+![Результат запроса](img/5-1.png)
