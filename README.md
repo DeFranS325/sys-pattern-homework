@@ -33,13 +33,8 @@ FROM staff s2
 JOIN store s ON s.store_id = s2.store_id
 JOIN customer c ON c.store_id = s.store_id 
 JOIN address a ON a.address_id = s.address_id
-WHERE s2.store_id IN (
-	SELECT c.store_id
-	FROM store s
-	JOIN customer c ON s.store_id = c.store_id
-	GROUP BY c.store_id
-	HAVING COUNT(s.store_id) > 300)
-GROUP BY s2.staff_id;
+GROUP BY s2.staff_id
+HAVING COUNT(s.store_id) > 300;
 ```
 
 ![Результат запроса](img/1-1.png)
