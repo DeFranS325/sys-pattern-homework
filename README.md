@@ -88,6 +88,43 @@ GROUP BY c.customer_id;
             -> Single-row covering index lookup on i using PRIMARY (inventory_id=r.inventory_id)  (cost=0.25 rows=1) (actual time=0.00107..0.00109 rows=1 loops=642)
 
 ```
+Пробуем создать индекс на payment.payment_date и немного изменить условие where.
+
+```SQL
+CREATE INDEX paymentdate ON payment(payment_date);
+
+EXPlAIN ANALYZE    
+select concat(c.last_name, ' ', c.first_name) as fi, sum(p.amount)
+from customer c
+JOIN rental r ON r.customer_id = c.customer_id
+JOIN payment p ON p.payment_date = r.rental_date                  
+where  p.payment_date >= '2005-07-30' and p.payment_date < DATE_ADD('2005-07-30', INTERVAL 1 DAY)
+GROUP BY c.customer_id;
+
+-> Table scan on <temporary>  (actual time=5.05..5.12 rows=391 loops=1)
+    -> Aggregate using temporary table  (actual time=5.05..5.05 rows=391 loops=1)
+        -> Nested loop inner join  (cost=581 rows=661) (actual time=0.0657..4.34 rows=642 loops=1)
+            -> Nested loop inner join  (cost=349 rows=634) (actual time=0.0564..1.63 rows=634 loops=1)
+                -> Filter: ((r.rental_date >= TIMESTAMP'2005-07-30 00:00:00') and (r.rental_date < <cache>(('2005-07-30' + interval 1 day))))  (cost=127 rows=634) (actual time=0.0486..0.383 rows=634 loops=1)
+                    -> Covering index range scan on r using rental_date over ('2005-07-30 00:00:00' <= rental_date < '2005-07-31 00:00:00')  (cost=127 rows=634) (actual time=0.0471..0.229 rows=634 loops=1)
+                -> Single-row index lookup on c using PRIMARY (customer_id=r.customer_id)  (cost=0.25 rows=1) (actual time=0.0018..0.00182 rows=1 loops=634)
+            -> Index lookup on p using paymentdate (payment_date=r.rental_date)  (cost=0.261 rows=1.04) (actual time=0.00359..0.00408 rows=1.01 loops=634)
+
+```
+Видно, что индекс ускорил выполнение запроса. При нескольких запусках иногда удается достигнуть времени выполнения в районе 3мс.
+```SQL
+-> Table scan on <temporary>  (actual time=3.08..3.12 rows=391 loops=1)
+    -> Aggregate using temporary table  (actual time=3.08..3.08 rows=391 loops=1)
+        -> Nested loop inner join  (cost=581 rows=661) (actual time=0.0661..2.72 rows=642 loops=1)
+            -> Nested loop inner join  (cost=349 rows=634) (actual time=0.0572..1.09 rows=634 loops=1)
+                -> Filter: ((r.rental_date >= TIMESTAMP'2005-07-30 00:00:00') and (r.rental_date < <cache>(('2005-07-30' + interval 1 day))))  (cost=127 rows=634) (actual time=0.0488..0.257 rows=634 loops=1)
+                    -> Covering index range scan on r using rental_date over ('2005-07-30 00:00:00' <= rental_date < '2005-07-31 00:00:00')  (cost=127 rows=634) (actual time=0.0473..0.153 rows=634 loops=1)
+                -> Single-row index lookup on c using PRIMARY (customer_id=r.customer_id)  (cost=0.25 rows=1) (actual time=0.00118..0.0012 rows=1 loops=634)
+            -> Index lookup on p using paymentdate (payment_date=r.rental_date)  (cost=0.261 rows=1.04) (actual time=0.00211..0.00242 rows=1.01 loops=634)
+
+```
+А это уже достаточно весомая прибавка в скорости.
+
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
