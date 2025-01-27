@@ -1,0 +1,35 @@
+---
+- name: Установка Nginx и настройка странички
+  hosts: web
+  become: true
+
+  tasks:
+
+    - name: Установка Nginx
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+        update_cache: true
+    
+    - name: Запуск Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
+    
+    - name: Замена главной страницы
+      copy:
+        content: "<html><head><title>Netology</title></head><body><h1>Sergeev A.N.</h1></body></html>"
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+
+      notify:
+        - Restart Nginx
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
+
